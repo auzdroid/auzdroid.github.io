@@ -1,120 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tennis Store</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
         }
-
         header {
-            background-color: #000;
+            background-color: #2ecc71;
             padding: 20px;
             text-align: center;
         }
-
         nav {
+            background-color: #27ae60;
+            padding: 10px 0;
             text-align: center;
-            background-color: #000;
-            padding: 10px;
         }
-
         nav a {
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
             margin: 0 10px;
         }
-
         nav a:hover {
-            background-color: #333;
+            background-color: #1e8449;
         }
-
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+            text-align: center;
         }
-
         .product {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .product-item {
-            background-color: #333;
+            display: inline-block;
+            margin: 20px;
+            border: 1px solid #ddd;
             padding: 20px;
-            margin: 10px;
-            width: calc(33.33% - 20px);
-            text-align: center;
+            width: 200px;
             border-radius: 10px;
+            background-color: #f9f9f9;
         }
-
-        .product-item img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
         footer {
-            background-color: #000;
-            text-align: center;
+            background-color: #2ecc71;
             padding: 20px;
+            text-align: center;
             position: fixed;
-            left: 0;
             bottom: 0;
             width: 100%;
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Tennis Store</h1>
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
     </nav>
-    <div class="container" id="home">
-        <h2>Welcome to Our Tennis Store</h2>
-        <p>We offer a wide range of tennis equipment including racquets, shoes, and bags.</p>
-    </div>
-    <div class="container" id="products">
-        <h2>Our Products</h2>
+    <div class="container">
+        <h2>Featured Products</h2>
         <div class="product">
-            <div class="product-item">
-                <img src="tennis_racquet.jpg" alt="Tennis Racquet">
-                <h3>Tennis Racquets</h3>
-                <p>Explore our collection of tennis racquets.</p>
-            </div>
-            <div class="product-item">
-                <img src="tennis_shoes.jpg" alt="Tennis Shoes">
-                <h3>Tennis Shoes</h3>
-                <p>Find the perfect pair of tennis shoes for your game.</p>
-            </div>
-            <div class="product-item">
-                <img src="tennis_bag.jpg" alt="Tennis Bag">
-                <h3>Tennis Bags</h3>
-                <p>Carry your gear in style with our tennis bags.</p>
-            </div>
+            <h3>Tennis Racquets</h3>
+            <img src="tennis_racquet.jpg" alt="Tennis Racquet">
+            <p>$99.99</p>
+            <button>Add to Cart</button>
         </div>
-    </div>
-    <div class="container" id="about">
-        <h2>About Us</h2>
-        <p>We are passionate about tennis and strive to provide the best equipment for players of all levels.</p>
+        <div class="product">
+            <h3>Tennis Shoes</h3>
+            <img src="tennis_shoes.jpg" alt="Tennis Shoes">
+            <p>$79.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Tennis Bags</h3>
+            <img src="tennis_bag.jpg" alt="Tennis Bag">
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 Tennis Store. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
