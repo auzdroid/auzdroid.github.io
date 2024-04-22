@@ -3,126 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ace Tennis Store</title>
+    <title>Tennis Store</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: white;
+            background-color: #f2f2f2;
         }
 
-        .header {
-            background-color: #2ECC71;
-            color: white;
-            padding: 20px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
         }
 
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-            color: white;  /* Ensure logo text has high contrast */
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: #DDD;
-            margin-bottom: 15px;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 25px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #ccc;
-        }
-
-        .main {
-            padding: 20px;
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .column {
-            flex: 33%;
-            padding: 10px;
+        nav {
+            display: flex;
+            align-items: center;
         }
 
-        .product-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.5rem;
+            border-radius: 4px;
         }
 
-        .product-title {
-            font-size: 18px;
-            margin-bottom: 5px;
+        nav a:hover {
+            background-color: #ddd;
         }
 
-        .product-price {
-            font-weight: bold;
-            color: #2ECC71;  /* Ensure price text has high contrast */
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 0;
         }
 
-        .footer {
-            background-color: #2ECC71;
-            color: white;
-            padding: 10px;
+        .product {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
             text-align: center;
+            width: 30%;
         }
 
-        /* New rule to fix low contrast in copyright text */
-        p.copyright {
-            color: #2ECC71;  /* Set copyright text to a darker color */
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            .product {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo">Ace Tennis Store</h1>
+    <header>
+        <div class="container">
+            <h1>Tennis Store</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
     </header>
-
-    <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-    </nav>
-
-    <main class="main">
-        <section class="column">
+    <main class="container">
+        <div class="product">
+            <img src="racquet.jpg" alt="Racquet">
             <h2>Racquets</h2>
-            <img class="product-image" src="[Image of Tennis Racquet]" alt="Tennis Racquet">
-            <h3 class="product-title">Wilson Burn 100 Series Tennis Racquet</h3>
-            <p class="product-price">$199.99</p>
-            <button>Buy Now</button>
-        </section>
-
-        <section class="column">
+            <p>Browse our selection of tennis racquets.</p>
+        </div>
+        <div class="product">
+            <img src="shoes.jpg" alt="Shoes">
             <h2>Shoes</h2>
-            <img class="product-image" src="[Image of Tennis Shoes]" alt="Tennis Shoes">
-            <h3 class="product-title">Nike Air Zoom Vapor Pro Tennis Shoe</h3>
-            <p class="product-price">$139.99</p>
-            <button>Buy Now</button>
-        </section>
-
-        <section class="column">
+            <p>Find the perfect pair of tennis shoes.</p>
+        </div>
+        <div class="product">
+            <img src="bag.jpg" alt="Bag">
             <h2>Bags</h2>
-            <img class="product-image" src="[Image of Tennis Bag]" alt="Tennis Bag">
-            <h3 class="product-price">Babolat Drive Max 6 Tennis Bag</h3>
-            <p class="product-price">$79.99</p>
-            <button>Buy Now</button>
-        </section>
+            <p>Shop our collection of tennis bags.</p>
+        </div>
     </main>
-
-    <footer class="footer">
-        <p class="copyright">&copy; 2024 Ace Tennis Store</p>
+    <footer>
+        <p>&copy; 2023 Tennis Store</p>
     </footer>
-
 </body>
 </html>
-
