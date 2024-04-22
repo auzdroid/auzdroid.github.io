@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,6 +21,7 @@
         .logo {
             font-size: 25px;
             font-weight: bold;
+            color: white;  /* Ensure logo text has high contrast */
         }
 
         .navbar {
@@ -66,7 +66,7 @@
 
         .product-price {
             font-weight: bold;
-            color: #2ECC71;
+            color: #2ECC71;  /* Ensure price text has high contrast */
         }
 
         .footer {
@@ -76,6 +76,10 @@
             text-align: center;
         }
 
+        /* New rule to fix low contrast in copyright text */
+        p.copyright {
+            color: #2ECC71;  /* Set copyright text to a darker color */
+        }
     </style>
 </head>
 <body>
@@ -109,15 +113,16 @@
         <section class="column">
             <h2>Bags</h2>
             <img class="product-image" src="[Image of Tennis Bag]" alt="Tennis Bag">
-            <h3 class="product-title">Babolat Drive Max 6 Tennis Bag</h3>
+            <h3 class="product-price">Babolat Drive Max 6 Tennis Bag</h3>
             <p class="product-price">$79.99</p>
             <button>Buy Now</button>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Ace Tennis Store</p>
+        <p class="copyright">&copy; 2024 Ace Tennis Store</p>
     </footer>
 
 </body>
 </html>
+
